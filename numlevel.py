@@ -16,3 +16,14 @@ def max_matrix(a):
     maxi = max(k)
     
     return maxi
+
+def min_matrix(a):
+    num = np.shape(a)
+    numraw = num[0]
+    k = np.zeros(numraw)
+    for i in range(numraw):
+        s = a[i]
+        k[i] = min(s)
+    mini = min(k)
+    
+    return mini
