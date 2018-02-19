@@ -1,12 +1,12 @@
 
 #a is a vector 
 
-def aritmatic_vec(a):         #mean
+def aritmatic_mean(a):         #mean
     # if a input is array
     mean = sum(a)/len(a)
     return mean
          
-def geometric_vec(a):         #mean
+def geometric_mean_vec(a):         #mean
     num = np.size(a)
     k = 1 
     
