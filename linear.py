@@ -8,7 +8,7 @@ import numpy as np
 
 # x is order
 # y is data set 
-def linear(y): 
+def linear_vec(y): 
     y_size = np.size(y)
     a = np.zeros(y_size-1)
     #for i in range(x_size):
@@ -29,13 +29,22 @@ def linear(y):
     return b
         
         
+def devide_vec(y,x):
+    y_size = np.size(y)
+    x_size = np.size(x)
+    z = np.zeros(y_size)
+    if y_size == x_size:
+        for i in range(y_size):
+            z[i] = np.float(y[i])/x[i]
     
+    return z 
+        
     
 
 
 #not work now
     
     
-y = [3,5,7,9]
-print (linear(y))
+#y = [3,5,7,9]
+#print (linear(y))
 #i = linear(y)
