@@ -25,7 +25,7 @@ def linear_vec(y):
                 b[i] = -1
             else:
                 b[i] = +1 
-            
+    #it is not ready now
     return b
         
         
