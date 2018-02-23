@@ -15,6 +15,20 @@ def second_deriv_symbolic(y,x):
     
     return yprime_prime 
 
+def local_peak(y,x,p):   # p is any point 
+    x = Symbol('x')
+    #y = fun(x)
+    yprime = y.diff(x)
+    
+    if yprime == 0: 
+        local_x = x
+        local_y = y
+        
+    # it is must test for diffrent dataset
+    return local_x , local_y
+
+
+
 '''
 # for example equation
 y = x**2 + 1
