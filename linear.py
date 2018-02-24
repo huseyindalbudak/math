@@ -43,8 +43,11 @@ def devide_vec(y,x):
 
 
 #not work now
-    
-    
+
+
+#for example 
 #y = [3,5,7,9]
 #print (linear(y))
 #i = linear(y)
+    
+    
