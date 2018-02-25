@@ -28,7 +28,6 @@ def local_peak(y,x,p):   # p is any point
     return local_x , local_y
 
 
-
 '''
 # for example equation
 y = x**2 + 1
@@ -40,4 +39,30 @@ print (yprime)
 yprime_yprime = second_deriv_symbolic(y,x)
 
 print (yprime_yprime)
+'''
+
+
+def deriv_vec_numeric(x, y):
+# ve would like tetha and betha for tangante 
+    size_x = np.size(x)
+    size_y = np.size(y)
+    deriv_func= np.zeros(size_x)
+    if size_x == size_y:
+        for i in range(size_x-1):
+            deriv_func[i] = np.float(x[i+1]-x[i])/(y[i+1]-y[i]) 
+                
+    else:
+        return 'can not derivavtive'
+
+    return deriv_func
+
+
+'''
+#  for example: deriv_vec_numeric function --->
+x = [1,2,3,4,5,6,7,8,9]
+y = [1,3,5,7,9,11,13,15,17]
+print (np.diff(x)/np.diff(y))
+
+a = deriv_vec(x,y)
+print (a)
 '''
