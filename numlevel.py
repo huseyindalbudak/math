@@ -14,7 +14,7 @@ def max_matrix(a):
         s = a[i]
         k[i] = max(s)
     maxi = max(k)
-    
+     # minimum number for the matrix elements
     return maxi
 
 def min_matrix(a):
@@ -25,5 +25,5 @@ def min_matrix(a):
         s = a[i]
         k[i] = min(s)
     mini = min(k)
-    
+    # minimum number for the matrix elements
     return mini
