@@ -1,11 +1,5 @@
 import numpy as np
 #linear line is f(x) = ax +b for a and b is constant
-
-#y = ax +b
-#dy/dx  = a 
-
-#x = [1,2,3,4] 
-
 # x is order
 # y is data set 
 def linear_vec(y): 
@@ -40,10 +34,7 @@ def devide_vec(y,x):
     return z 
         
     
-
-
 #not work now
-
 
 #for example 
 #y = [3,5,7,9]
