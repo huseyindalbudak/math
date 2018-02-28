@@ -27,6 +27,16 @@ def local_peak(y,x,p):   # p is any point
     # it is must test for diffrent dataset
     return local_x , local_y
 
+def similar_local_peak(y,x):
+    local_cordinate = local_peak(y,x)
+    e2 = local_coorinate[1]
+    lis = np.zeros(np.size(y))
+    for i in range(np.size(y)):    
+        a = y[i]
+        if e2 == a :
+            similar_lis[i] = a
+    return similar_lis
+
 
 '''
 # for example equation
