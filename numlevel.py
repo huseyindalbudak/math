@@ -1,11 +1,3 @@
-'''
-forexample
-a = [[10,4] ,[2,11] ]
-max(a)  is [10,4] but it is not true !!! 
-we can find a numbe for any matrix with  max_matrix  function
-it can important for the complex problems
-'''
-
 def max_matrix(a):
     num = np.shape(a)
     numraw = num[0]
