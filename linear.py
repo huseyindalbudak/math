@@ -32,6 +32,17 @@ def devide_vec(y,x):
             z[i] = np.float(y[i])/x[i]
     
     return z 
+
+
+def crossProduct_vec(y,x):
+    y_size = np.size(y)
+    x_size = np.size(x)
+    z = np.zeros(y_size)
+    if y_size == x_size:
+        for i in range(y_size):
+            z[i] = np.float(y[i])*x[i]
+    
+    return z 
         
     
 #not work now
