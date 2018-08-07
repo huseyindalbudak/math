@@ -4,7 +4,9 @@ import matplotlib
 import time
 from scipy import stats, linalg
 
-#import scipy
+#Huseyin DALBUDAK
+# NOV. 11 .2017
+# non-linear gauss fitting
 
 def feval(funcName, *args):
     return eval(funcName)(*args)
