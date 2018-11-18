@@ -6,6 +6,7 @@ The codes created to automate common intelligence games.
 CalMathOpp.py
 ![alt text](https://github.com/huseyindalbudak/mathpy/blob/master/gamesAlgorithms/mathOpp.png)
 
+<html lang="en">
 - Assumption Math Opp. for many Numbers 
 For Example: the sample is *4 | 8 | 3 | 6 | 2 | 60*  --> you should find *987* with math opperations. 
 the solution: 
@@ -15,3 +16,4 @@ the solution:
 <l>24+3 = 27  </l>
 <l>960+27 = 987 </l>            
 you can wathc it via this link [Bir Kelime Bir Islem video](https://youtu.be/-Kg2Zl9OD4U?t=434)
+</html>
