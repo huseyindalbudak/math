@@ -1,5 +1,6 @@
 import numpy as np 
-
+#python 2.7
+#H.Dalbudak Now 18 2018
 # this code is wrote for a game 
 #the game: there are 4 number and 4 math opperation.
 # we know 4 number and 2 loop. We need 3th loop resut 
