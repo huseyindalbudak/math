@@ -6,24 +6,24 @@ import numpy as np
 def feval(funcName, *args):
     return eval(funcName)(*args)
 
-def topla(x,y):
-    toplam = x+y
-    return toplam
+def sum(x,y):
+    summ = x+y
+    return summ
 
-def cikar(x,y):
-    cikarim = x-y
-    return cikarim
+def minus(x,y):
+    minusim = x-y
+    return minusim
 
-def carp(x,y):
-    carp = x*y
-    return carp
+def multip(x,y):
+    multip = x*y
+    return multip
 
-def bol(x,y):
-    bol = x/y
-    return bol
+def divide(x,y):
+    divide = x/y
+    return divide
 
 def islemIter(sonuc,sonuc2):
-    islemArray = ['topla', 'cikar','carp','bol']
+    islemArray = ['sum', 'minus','multip','divide']
     islemSirasi3 = np.random.randint(4)
 
     funcname3 = islemArray[islemSirasi3]
@@ -35,7 +35,7 @@ def islemIter(sonuc,sonuc2):
 
 def islem(x,y,z,l):
     islemSirasi = np.random.randint(4)
-    islemArray = ['topla', 'cikar','carp','bol']
+    islemArray = ['sum', 'minus','multip','divide']
     funcname = islemArray[islemSirasi]
     sonuc = feval(funcname, x,y)
     islemSirasi2=np.random.randint(4)
@@ -125,7 +125,6 @@ while mainLoop==1:
         else:
             print 'repeat this program'
             mainLoop = 1
-#this while do not have to depend former
 '''
 a1= 4
 b1= 4
