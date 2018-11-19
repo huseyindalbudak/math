@@ -1,6 +1,5 @@
 import numpy as np 
-#python 2.7
-#H.Dalbudak Now 18 2018
+
 # this code is wrote for a game 
 #the game: there are 4 number and 4 math opperation.
 # we know 4 number and 2 loop. We need 3th loop resut 
@@ -67,53 +66,65 @@ d1= 3
 funcSonuc = islem(a,b,c,d)
 i = 0 
 im = 0
+mainLoop=1
+while mainLoop==1:
+    while bayrak == 1:
+        funcSonucRun = islem(a, b, c, d)
+        son = funcSonucRun[2][0]
+        print 'son', son
+        if son == 33:
+            print 'oldu iter i', i
+            print 'islem(a,b):', funcSonucRun[3]
+            print 'islem2(c,d):', funcSonucRun[4]
+            print 'islem3[(a,b),(c,d)]:', funcSonucRun[2][1]
+            isab = funcSonucRun[3]
+            iscd = funcSonucRun[4]
+            isfin = funcSonucRun[2][1]
+            bayrak = 0
+        else:
+            i = i + 1
 
-while bayrak==1:
-    funcSonucRun = islem(a,b,c,d)
-    son = funcSonucRun[2][0]
-    print 'son',son
-    if son ==33:
-        print 'oldu iter i',i
-        print 'islem(a,b):',funcSonucRun[3]
-        print 'islem2(c,d):',funcSonucRun[4]
-        print 'islem3[(a,b),(c,d)]:',funcSonucRun[2][1]
-        isab = funcSonucRun[3]
-        iscd = funcSonucRun[4]
-        isfin = funcSonucRun[2][1]
-        bayrak = 0
-    else:
-        i = i + 1
+    kosul = 0
 
-while bayrak == 0:
-    funcSonucRun1 = islem(a1,b1,c1,d1)
-    son1 = funcSonucRun1[2][0]
-    print 'son1' , son1
-    if son1 ==48:
-        print 'oldu iter im',im
-        print 'islem(a,b):',funcSonucRun[3]
-        print 'islem2(c,d):',funcSonucRun[4]
-        print 'islem3[(a,b),(c,d)]:',funcSonucRun[2][1]
-        isab1 = funcSonucRun[3]
-        iscd1 = funcSonucRun[4]
-        isfin1 = funcSonucRun[2][1]
-        if (isab==isab1)and{iscd==iscd1}and(isfin==isfin1):
-            print 'islemler karsilikli'
+    while bayrak == 0:
+        funcSonucRun1 = islem(a1, b1, c1, d1)
+        son1 = funcSonucRun1[2][0]
+        print 'son1', son1
+        if son1 == 48:
+            print 'oldu iter im', im
+            print 'islem(a,b):', funcSonucRun1[3]
+            print 'islem2(c,d):', funcSonucRun1[4]
+            print 'islem3[(a,b),(c,d)]:', funcSonucRun1[2][1]
+            isab1 = funcSonucRun1[3]
+            iscd1 = funcSonucRun1[4]
+            isfin1 = funcSonucRun1[2][1]
+            if (isab == isab1) and {iscd == iscd1} and (isfin == isfin1):
+                kosul = 1
+                print
+                'islemler karsilikli'
+                bayrak = 1
+            print
+            'islemler karsiliklidegil'
             bayrak = 1
-        print 'islemler karsiliklidegil'
-        bayrak = 1
+        else:
+            im = im + 1
 
-    else:
-        im = im +1 
-
-a2=3 
-b2=2
-c2=5
-d2=1
-result1 = feval(isab,a2,b2)
-result2 = feval(iscd, c2,d2)
-result3 = feval(isfin1,result1,result2)
-print result3
-
+        a2 = 2
+        b2 = 3
+        c2 = 5
+        d2 = 1
+        print
+        kosul
+        if kosul == 1:
+            result1 = feval(isab, a2, b2)
+            result2 = feval(iscd, c2, d2)
+            result3 = feval(isfin1, result1, result2)
+            print "3. loop result--> ? =", result3
+            print "total iteration", i + im
+            mainLoop = 0
+        else:
+            print 'repeat this program'
+            mainLoop = 1
 #this while do not have to depend former
 '''
 a1= 4
