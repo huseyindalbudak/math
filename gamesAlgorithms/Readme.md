@@ -6,7 +6,7 @@ The codes created to automate common intelligence games.
 CalMathOpp.py
 ![alt text](https://github.com/huseyindalbudak/mathpy/blob/master/gamesAlgorithms/mathOpp.png)
 
-- Assumption Math Opp. for many Numbers 
+- Assumption math opperations :1234: islemGames.py for many Numbers 
 For Example: the sample is *4 | 8 | 3 | 6 | 2 | 60*  --> you should find *987* with math opperations. 
 the solution: 
 <li>2*8 =16 </li>
