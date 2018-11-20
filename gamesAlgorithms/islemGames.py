@@ -26,6 +26,8 @@ def bol(x,y):
         bol = 0
     return bol
 
+def recEleman(el1,el2,funcname):
+    print el1,funcname,el2
 
 def tislem(args):
 
@@ -47,6 +49,8 @@ def tislem(args):
     sonuc = feval(funcname, eleman1, eleman2)
     args.remove(eleman2)
     args.insert(0,sonuc)
+    
+    recEleman(eleman1,eleman2,funcname)
 
     return args
 
