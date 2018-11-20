@@ -21,7 +21,7 @@ def carp(x,y):
 def bol(x,y):
     if y != 0:
         #bol =np.float(x)/y
-        bol = x/y
+        bol = np.float(x)/y
     else:
         bol = 0
     return bol
