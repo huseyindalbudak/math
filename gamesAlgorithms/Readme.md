@@ -14,7 +14,8 @@ the solution:
 <li>6*4 = 24 </li>
 <li>24+3 = 27  </li>
 <li>960+27 = 987 </li>            
-you can wathc it via this link ![Bir Kelime Bir Islem video](https://youtu.be/-Kg2Zl9OD4U?t=434)
+you can watch the game format via this link 
+<a href="https://youtu.be/-Kg2Zl9OD4U?t=434" target="_blank">Bir Kelime Bir Islem format video</a>
 
 ----
 3.  :1234:  sudoku3x3.py
