@@ -1,4 +1,4 @@
-**Games with Algorithms**
+# Games with Algorithms
 
 The codes created to automate common intelligence games. 
 1. Assumption Math Opp. for Numbers :game_die:
