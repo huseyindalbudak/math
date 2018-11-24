@@ -44,6 +44,19 @@ def crossProduct_vec(y,x):
     
     return z 
         
+def line(xvec,a,b):
+    #to line produce
+    size = np.size(xvec)
+    y = [0]*size
+    for i in range(size):
+        y[i] = a*xvec[i] + b
+    return y
+
+
+#xvec = [5,7,8,9,10,11,12,13]
+#y = line(xvec,3,9)
+#print y
+
     
 #not work now
 
