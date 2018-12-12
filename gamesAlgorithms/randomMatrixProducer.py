@@ -53,23 +53,8 @@ def lister(k):
     return rowjm
     #for i in range(k)
 
-
-a = [[3,5,9],[98,9,7],[4,3,6]]
-np.random.shuffle(a)
-vec = [32,8,9,7,8,9]
-
-lale = mixer(vec)
-print (lale)
-
-s = order(20)
-print (s)
-
-k,l,m = nane(a)
-print (k,l,m )
-
 #####################forexample:  we need 10x10 matrix with random integer distribution from 1 to 10 ###############
 km = lister(10)       
 r = nane(km)
 ####################
-print ('it is sudoku')
 print (r)
